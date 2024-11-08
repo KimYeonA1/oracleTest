@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3AE09FB0-F76A-AA9E-BE0C-0415B109EF9F" containerWithKeyObject="A4A477DB-E9A6-0711-45CD-33AD472BA3F2" localFKIndex="B14982B8-2C67-9BAD-9575-B52002C39953" name="RE_VID_NO_FK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>RE_VID_NO_FK</sourceObjName>
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>7E17319E-C658-C54A-AA4F-148577F5E92E</importedID>
+<referredTableLongName>HR.VIDEO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C4CA7F73-18E5-4A5E-7F12-8176D7D7F4DA</referredTableID>
+<keyObject>EE76A436-180B-70B2-0655-5399A575CF52</keyObject>
+<referredKeyID>EE76A436-180B-70B2-0655-5399A575CF52</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>VID_NO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
