@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="RE" directorySegmentName="seg_0" id="A4A477DB-E9A6-0711-45CD-33AD472BA3F2">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<schemaObject>3FF2C4C9-6DBD-638B-20F0-A93B16E7D50E</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>E8A92738-A483-047C-3412-EA4D29084676</segment>
+<tableSpace>59EE7C62-47CE-4A1C-6F72-0861367E53F9</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="VID_NO" id="1560BE41-5300-983A-7118-509435D73E61">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUS_NO" id="375BB724-3CC8-3D51-2029-5165063826B2">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RETURN_NO" id="6CD12EBE-134E-20CF-BE9A-728E07D35C23">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RE_DATE" id="885CA997-0D30-0855-6C28-E071265E82ED">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RE_TOTAL" id="CE54F76B-5DD6-63E1-2682-6E2D8E9FB982">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RE_SCDATE" id="D7F1E4A9-FBCD-E94C-EFE0-C785D73F6CB2">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="RE_RETURN_NO_PK" id="DB34282C-EB67-E96A-7312-D60EE8541A62">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<schemaObject>3FF2C4C9-6DBD-638B-20F0-A93B16E7D50E</schemaObject>
+<segment>323CD3F6-C85D-99C6-6CCD-16403D8A6AD5</segment>
+<tableSpace>59EE7C62-47CE-4A1C-6F72-0861367E53F9</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="RE_CUS_NO_FK" id="44031117-7A55-AB60-7732-C5F02356E88B">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="RE_VID_NO_FK" id="B14982B8-2C67-9BAD-9575-B52002C39953">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="RE_RETURN_NO_PK" id="919A4082-B8CD-B785-5520-62B29DC64C94">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<segment>323CD3F6-C85D-99C6-6CCD-16403D8A6AD5</segment>
+<tableSpace>59EE7C62-47CE-4A1C-6F72-0861367E53F9</tableSpace>
+<existingIndex>DB34282C-EB67-E96A-7312-D60EE8541A62</existingIndex>
+<indexSegment>323CD3F6-C85D-99C6-6CCD-16403D8A6AD5</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

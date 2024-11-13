@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A4A477DB-E9A6-0711-45CD-33AD472BA3F2" schemaObject="3FF2C4C9-6DBD-638B-20F0-A93B16E7D50E" name="RE">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>RE</sourceObjName>
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>B2E88414-2B62-68B2-7BAF-B5DD604D3A35</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RETURN_NO" id="6CD12EBE-134E-20CF-BE9A-728E07D35C23">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>RE</sourceObjSchema>
+<sourceObjName>RETURN_NO</sourceObjName>
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>514C1DEF-263C-30D7-6E83-99688E45DAD0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VID_NO" id="1560BE41-5300-983A-7118-509435D73E61">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>RE</sourceObjSchema>
+<sourceObjName>VID_NO</sourceObjName>
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>AE736D4C-1269-312F-5ECF-C1F672C46872</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3AE09FB0-F76A-AA9E-BE0C-0415B109EF9F" referredColumn="CC5A9AD0-7002-56C5-A593-B090E40380E0"/>
+</associations>
+</Column>
+<Column name="CUS_NO" id="375BB724-3CC8-3D51-2029-5165063826B2">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>RE</sourceObjSchema>
+<sourceObjName>CUS_NO</sourceObjName>
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>7BC64792-48B3-7DDA-D214-19A93228B5DF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E5E3B05-AFD3-FB9C-C631-19585DF7D148" referredColumn="1FBD32D5-1507-50A8-9C93-960AEBB31DCE"/>
+</associations>
+</Column>
+<Column name="RE_DATE" id="885CA997-0D30-0855-6C28-E071265E82ED">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>RE</sourceObjSchema>
+<sourceObjName>RE_DATE</sourceObjName>
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>7A1EEE7D-5358-09E7-4FF7-BECB8DEE71BE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RE_SCDATE" id="D7F1E4A9-FBCD-E94C-EFE0-C785D73F6CB2">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>RE</sourceObjSchema>
+<sourceObjName>RE_SCDATE</sourceObjName>
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>8CC32EB2-FD49-CA0A-8CF1-1C72A8F8B808</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RE_TOTAL" id="CE54F76B-5DD6-63E1-2682-6E2D8E9FB982">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>RE</sourceObjSchema>
+<sourceObjName>RE_TOTAL</sourceObjName>
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>C1AA619B-56D7-B16C-B2A3-C29FF12801F4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="919A4082-B8CD-B785-5520-62B29DC64C94" name="RE_RETURN_NO_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>RE_RETURN_NO_PK</sourceObjName>
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>3140F103-30C3-E3EE-81FE-88055D2215BD</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6CD12EBE-134E-20CF-BE9A-728E07D35C23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB34282C-EB67-E96A-7312-D60EE8541A62" schemaObject="3FF2C4C9-6DBD-638B-20F0-A93B16E7D50E" name="RE_RETURN_NO_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>RE_RETURN_NO_PK</sourceObjName>
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>AF47708B-8E54-FB5D-887A-BC1ED7C9DBF4</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6CD12EBE-134E-20CF-BE9A-728E07D35C23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44031117-7A55-AB60-7732-C5F02356E88B" name="RE_CUS_NO_FK">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="375BB724-3CC8-3D51-2029-5165063826B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B14982B8-2C67-9BAD-9575-B52002C39953" name="RE_VID_NO_FK">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-07 15:02:10 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1560BE41-5300-983A-7118-509435D73E61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

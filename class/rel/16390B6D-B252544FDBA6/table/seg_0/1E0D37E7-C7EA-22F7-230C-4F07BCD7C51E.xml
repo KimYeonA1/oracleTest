@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E0D37E7-C7EA-22F7-230C-4F07BCD7C51E" name="emp03">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-06 07:00:22 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="email" id="0041B6B3-D76F-A9E4-AF4D-A1821B903834">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-06 07:01:56 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone_number" id="25B4B5B9-BC1C-C192-E6CA-1ADAF52C79DC">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-06 07:04:48 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_name" id="BE10FB3B-FE39-828B-8D8A-6FFB60D38183">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-06 07:05:00 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customer_id" id="E16DF7A7-7142-3371-6A78-8CA9E3351620">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-06 07:05:20 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="birthday" id="30710385-BE6C-E535-629D-74C8DC32D4F8">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-06 07:05:29 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="point" id="3E03ECB0-8124-3258-CA82-368EE27D88C7">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-06 07:06:23 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gender" id="885BA48D-6E79-04F5-C70D-0EFEA0CDB79B">
+<createdBy>85yun</createdBy>
+<createdTime>2024-11-06 07:06:30 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>
