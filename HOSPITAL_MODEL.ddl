@@ -55,7 +55,6 @@ CREATE TABLE reservation (
     reservdate DATE NOT NULL,
     status     VARCHAR2(3 CHAR) NOT NULL
 );
-
 SELECT * FROM reservation;
 
 
