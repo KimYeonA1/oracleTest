@@ -49,7 +49,62 @@ SELECT * FROM USER_SEQUENCES WHERE SEQUENCE_NAME = 'DEPT_SEQ'; -- 바꼈는지 �
 
 --SEQUENCE 삭제
 DROP SEQUENCE DEPT_SEQ;
+--데이터 딕셔너리 인덱스 확인
+SELECT * FROM USER_INDEXES WHERE TABLE_NAME = 'EMPLOYEES';
+SELECT * FROM USER_IND_COLUMNS WHERE TABLE_NAME = 'EMPLOYEES';
 
+SELECT * FROM EMPLOYEES WHERE EMPLOYEE_ID = 100;
 
+DROP TABLE EMP10;
 
+CREATE TABLE EMP10
+AS
+SELECT * FROM EMPLOYEES WHERE 1 = 1;
 
+SELECT * FROM EMP10 WHERE EMPLOYEE_ID = 100; --인덱스가 빨라짐
+
+--인덱스 생성하기 (팀프로젝트에 넣기)
+SELECT * FROM USER_IND_COLUMNS WHERE TABLE_NAME = 'EMP10';
+
+CREATE UNIQUE INDEX EMP10_EMPLOYEE_IX
+ON EMP10(EMPLOYEE_ID);
+
+--인덱스 삭제하기
+DROP INDEX EMP10_EMPLOYEE_IX;
+
+--문제1) 사원 번호와 사원명과 부서명과 부서의 위치를 출력하는 뷰 (VIEW_LOC)를 작성하라
+SELECT EMPLOYEE_ID, FIRST_NAME, DEPARTMENT_ID FROM EMPLOYEES;  --서브
+SELECT DEPARTMENT_ID, DEPARTMENT_NAME, LOCATION_ID FROM DEPARTMENTS; --주 DEPARTMENT 조인 시키기
+
+CREATE OR REPLACE VIEW VIEW_LOC
+AS
+SELECT EMPLOYEE_ID, FIRST_NAME ||' '||LAST_NAME AS NAME, E.DEPARTMENT_ID,DEPARTMENT_NAME, LOCATION_ID
+FROM EMPLOYEES E INNER JOIN DEPARTMENTS D ON E.DEPARTMENT_ID = D.DEPARTMENT_ID;
+
+SELECT * FROM VIEW_LOC;
+--문제2) 30번 부서 소속 사원의 이름과 입사일과 부서명을 출력하는 뷰(VIEW_DEPT30)를 작성하라
+create or replace view view_dept30
+as 
+select e.first_name, e.hire_date, d.department_name, e.department_id
+from employees e inner join departments d on e.department_id = d.department_id
+where e.department_id=30;
+
+SELECT * FROM VIEW_DEPT30;
+
+--문제3) 부서별 최대 급여 정보를 가지는 뷰(VIEW_DEPT_MAXSAL)를 생성하라
+create view view_dept_maxsal
+as
+select * from employees where (department_id, salary) in (select department_id, max(salary) from employees group by department_id);
+
+select department_id, max(salary) from employees group by department_id;
+
+--문제4) 급여를 많이 받는 순서대로 3명만 출력하는(VIEW_SAL_TOP3)와 인라인 뷰로 작성하라
+CREATE VIEW VIEW_SAL_TOP10
+AS
+SELECT SALARY, FIRST_NAME, employee_id FROM EMPLOYEES ORDER BY SALARY DESC;
+
+SELECT ROWNUM, SALARY, FIRST_NAME, employee_id FROM VIEW_SAL_TOP10 WHERE ROWNUM <= 10;
+
+SELECT ROWNUM, SALARY, FIRST_NAME, employee_id FROM 
+(SELECT SALARY, FIRST_NAME, employee_id FROM EMPLOYEES ORDER BY SALARY DESC)
+WHERE ROWNUM <= 10; --서브쿼리를 써라
