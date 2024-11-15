@@ -19,17 +19,25 @@ SELECT COUNT(*), SUM(SALARY), ROUND(AVG(SALARY)) FROM EMPLOYEES; --COUNT를 사�
 --SELECT DEPARTMENT_ID, COUNT(*), SUM(SALARY), ROUND(AVG(SALARY)) FROM EMPLOYEES GROUP BY DEPARTMENT_ID;
 
 -- PL/SQL 
--- FOR IN LOOP 구구단 작성하기
+-- DEPARTMENTS 테이블에 전체내용을 COUSOR 저장하고 FETCH해서 전체 정보를 출력하시오.
 DECLARE
-    I NUMBER(2);
+    VDEP DEPARTMENTS%ROWTYPE;
+    --CURSOR C1 IS SELECT * FROM DEPARTMENTS;
 BEGIN
-    DBMS_OUTPUT.PUT_LINE('구구단');
-    DBMS_OUTPUT.PUT_LINE('------------------');
-    FOR I IN 1..9 LOOP
-        FOR J IN 1..9 LOOP
-            DBMS_OUTPUT.PUT_LINE( I || ' X ' || J || ' = ' || I*J);
-        END LOOP;
-        DBMS_OUTPUT.PUT_LINE('------------------');
+
+    FOR VDEP IN (SELECT * FROM DEPARTMENTS) LOOP
+        DBMS_OUTPUT.PUT_LINE(VDEP.DEPARTMENT_ID || ' / ' || VDEP.DEPARTMENT_NAME);
+    END LOOP; --CURSOR를 향상된 FOR문으로 했을 때
+    /************************************
+    OPEN C1;
+    LOOP
+        FETCH C1 INTO VDEP.DEPARTMENT_ID, VDEP.DEPARTMENT_NAME, VDEP.MANAGER_ID,VDEP.LOCATION_ID;
+        EXIT WHEN C1%NOTFOUND;
+        DBMS_OUTPUT.PUT_LINE(VDEP.DEPARTMENT_ID || ' / ' || VDEP.DEPARTMENT_NAME);
     END LOOP;
+    CLOSE C1;
+        *********************************/
 END;
 /
+
+
