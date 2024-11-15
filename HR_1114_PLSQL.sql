@@ -19,19 +19,17 @@ SELECT COUNT(*), SUM(SALARY), ROUND(AVG(SALARY)) FROM EMPLOYEES; --COUNT를 사�
 --SELECT DEPARTMENT_ID, COUNT(*), SUM(SALARY), ROUND(AVG(SALARY)) FROM EMPLOYEES GROUP BY DEPARTMENT_ID;
 
 -- PL/SQL 
--- departments 에서 반복문을 이용해서 부서 10, 20, 30, 40 정보를 출력하시오.
+-- FOR IN LOOP 구구단 작성하기
 DECLARE
-    VDEPARTMENTS DEPARTMENTS%ROWTYPE;
+    I NUMBER(2);
 BEGIN
+    DBMS_OUTPUT.PUT_LINE('구구단');
+    DBMS_OUTPUT.PUT_LINE('------------------');
     FOR I IN 1..9 LOOP
-        select * INTO VDEPARTMENTS from departments where department_id = I*10;
-        DBMS_OUTPUT.PUT_LINE(VDEPARTMENTS.DEPARTMENT_ID || ' / ' || VDEPARTMENTS.DEPARTMENT_NAME); 
-    END LOOP; 
+        FOR J IN 1..9 LOOP
+            DBMS_OUTPUT.PUT_LINE( I || ' X ' || J || ' = ' || I*J);
+        END LOOP;
+        DBMS_OUTPUT.PUT_LINE('------------------');
+    END LOOP;
 END;
 /
-
-select * from departments where department_id = 10;
-select * from departments where department_id = 20;
-select * from departments where department_id = 30;
-select * from departments where department_id = 40;
-
